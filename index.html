@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profound In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">Profound In</a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><button class="hello">
+            <a href="#">Home</a>
+          </button></li>
+          <li><button class="hello">
+            <a href="#">Database</a>
+          </button></li>
+          <li><button class="hello">
+            <a href="#">About us</a>
+          </button></li>
+          <li><button class="hello">
+            <a href="#">Contact us</a>
+          </button></li>
+          <li><button class="hello">
+            <a href="./app-debug.apk">DOWNLOAD</a>
+          </button></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h2>Welcome To Profound In's Website </h2>
+        <p>
+          Our products and your buses will revolutionizes bus ticket data management with a single installation. It ensures real time data, while simplifying operations. Say gooddbye to manual record-keeping and embrace a secure and easy-to-manage solution for your ticketing needs.
+        </p>
+        <button class="learn-more" style=" list-style: none; ">
+          <a href="./style.css" class="btn">Get Started  </a>
+        </button>
+      </div>
+    </section>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>
